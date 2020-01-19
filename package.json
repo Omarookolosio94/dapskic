@@ -1,0 +1,24 @@
+{
+  "name": "dapskic",
+  "version": "1.0.0",
+  "description": "construction company website",
+  "main": "index.js",
+  "homepage": "https://omarookolosio94.github.io/dapskic",
+  "scripts": {
+     "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "website",
+    "construction",
+    "company",
+    "responsive",
+    "mobile",
+    "first",
+    "design"
+  ],
+  "author": "OKolosio Oghenemaro",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
