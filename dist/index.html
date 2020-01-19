@@ -6,22 +6,27 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Dapskic Construction || Home</title>
    <link rel="stylesheet" href="./css/all.min.css">
+   <link rel="stylesheet" href="./css/home.css">
    <link rel="stylesheet" href="./css/index.css">
+
 </head>
 <body>
    <!-- Navigation -->
-   <nav class="navbar">
+   <nav class="navbar bg-light">
       <div class="container">
-         <a href="" class="text-dark"><i class="fas fa-tractor"></i> Dapskic</a>
+         <div class="logo">
+             <p class="text-bold text-primary"><i class="fas fa-hard-hat fa-lg text-dark"></i>APSKIC </p>
+         </div>
+         
          <ul class="navbar-nav">
             <li class="nav-item">
-               <a href="" class="nav-link"><i class="fas fa-map-marker fa-sm"></i> About </a>
+               <a href="" class="nav-link text-dark"><i class="fas fa-map-marker hide-sm"></i> About Us</a>
             </li>
             <li class="nav-item">
-               <a href="" class="nav-link"> <i class="fas fa-tools"></i> Services </a>
+               <a href="#services" class="nav-link text-dark"> <i class="fas fa-tractor hide-sm"></i> Services </a>
             </li>
             <li class="nav-item">
-               <a href="" class="nav-link"> <i class="fas fa-phone"></i> Contact</a>
+               <a href="#foot" class="nav-link text-dark"> <i class="fas fa-phone hide-sm"></i> Contact</a>
             </li>
          </ul>
       </div>
@@ -30,35 +35,37 @@
 
    <!-- Landing section -->
    <div class="landing">
-      <div class="container">
-         <div class="info">
-            <h3> Build With Us</h3>
-            <h1>Dapskic Construction</h1>
-            <p>Get all your construction, dredging and engineering project; from Start to Finish completed by world class engineers here at Dapskic</p>
+      <div class="dark-overlay">
+         <div class="container">
+            <div class="info text-light">
+               <h3> Build With Us</h3>
+               <h1 class="text-upper text-primary">Dapskic Construction</h1>
+               <p>Get all your construction, dredging and engineering project; from Start to Finish completed by world class engineers here at <span class="text-primary">Dapskic</span></p>
 
-            <button class="btn">
-               Start Your Project
-            </button>
-         </div>
+               <button class="btn btn-primary my-3">
+                  Start Your Project
+               </button>
+            </div>
 
-         <div class="info-link">
-            <p>Get in touch with us</p>
-            <div class="info-social">
-               <a href="#" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-twitter"></i>
-               </a>
-               <a href="#" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-facebook"></i>
-               </a>
-               <a href="#" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-linkedin"></i>
-               </a>
-               <a href="#" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-youtube"></i>
-               </a>
-               <a href="#" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-instagram"></i>
-               </a>
+            <div class="info-link">
+               <p class="text-light">Get in touch with us</p>
+               <div class="info-social">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-instagram"></i>
+                  </a>
+               </div>
             </div>
          </div>
       </div>
@@ -66,12 +73,12 @@
    <!-- End of Landing Section -->
    
    <!-- Unique Selling Point -->
-   <div class="salespitch">
+   <div class="salespitch my-3">
       <div class="container">
          <div class="pitch-box">
             <div class="pitch">
                <div class="pitch-icon">
-                  <i class="fas fa-marker"></i>
+                  <i class="fas fa-check-circle  fa-2x text-primary"></i>
                   <p>1</p>
                </div>
                <div class="pitch-detail">
@@ -82,7 +89,7 @@
 
             <div class="pitch">
                <div class="pitch-icon">
-                  <i class="fas fa-clock"></i>
+                  <i class="fas fa-check-circle fa-2x text-primary"></i>
                   <p>2</p>
                </div>
                <div class="pitch-detail">
@@ -93,11 +100,11 @@
 
             <div class="pitch">
                <div class="pitch-icon">
-                  <i class="fas fa-car"></i>
+                  <i class="fas fa-check-circle fa-2x text-primary"></i>
                   <p>3</p>
                </div>
                <div class="pitch-detail">
-                  <h2>Affordability</h2>
+                  <h3>Affordability</h3>
                   <p>Tailoring designs to meet available clients resource , while still maintaining quality. </p>
                </div>
             </div>
@@ -107,14 +114,14 @@
    <!-- End of Unique Selling Point -->
 
    <!-- Our Services -->
-   <div class="services">
+   <div id="services">
       <div class="container">
          <h1>Our Services</h1>
 
          <!-- Service section -->
          <div class="service">
             <div class="service-img">
-               <img src="./img/construction.jpg" alt="construction">
+               <img src="./img/tractor.jpg" alt="construction">
             </div>
             <div class="service-detail">
                <h2>Construction</h2>
@@ -124,7 +131,7 @@
 
          <div class="service">
             <div class="service-img">
-               <img src="./img/drilling.jpg" alt="dredging">
+               <img src="./img/worksite.jpg" alt="dredging">
             </div>
             <div class="service-detail">
                <h2>Dredging And Pilling</h2>
@@ -134,7 +141,7 @@
 
          <div class="service">
             <div class="service-img">
-               <img src="./img/environment.jpg" alt="construction">
+               <img src="./img/workers.jpg" alt="construction">
             </div>
             <div class="service-detail">
                <h2>Maintainance</h2>
@@ -144,7 +151,7 @@
 
          <div class="service">
             <div class="service-img">
-               <img src="./img/offshore.jpg" alt="consultant">
+               <img src="./img/standard.jpg" alt="consultant">
             </div>
             <div class="service-detail">
                <h2>Consultation</h2>
@@ -171,12 +178,12 @@
 
             <div class="photo">
                <div class="photo-img">
-                  <img src="./img/drilling.jpg" alt="">
+                  <img src="./img/road.jpg" alt="">
                </div>
                <div class="photo-detail">
                   <div class="detail-box">
-                     <h4> Dredging At Bakoko Community</h4>
-                     <p>Drilling a 600000ft well at a remote village in South-South Nigeria.</p>
+                     <h4> Road constructionAt Bakoko Community</h4>
+                     <p>Building a 6000km road at a remote village in South-South Nigeria.</p>
                      <a href="project.html"> Read More ...</a>
                   </div>
                </div>
@@ -184,7 +191,7 @@
 
             <div class="photo">
                <div class="photo-img">
-                  <img src="./img/environment.jpg" alt="">
+                  <img src="./img/tractor2.jpg" alt="">
                </div>
                <div class="photo-detail">
                   <div class="detail-box">
@@ -197,7 +204,7 @@
 
             <div class="photo">
                <div class="photo-img">
-                  <img src="./img/drilling.jpg" alt="">
+                  <img src="./img/worksite.jpg" alt="">
                </div>
                <div class="photo-detail">
                   <div class="detail-box">
@@ -276,8 +283,92 @@
    <!-- End of Clients -->
 
    <!-- Footer section -->
-   <footer>
+   <footer id="foot">
+      <div class="container">
+         <div class="foot-box">
+            <!-- About Dapskic -->
+            <div class="foot-about">
+               <p><i class="fas fa-hard-hat"></i> Dapskic</p>
+               <small>Quality , Durability and Class ; that is how we build for you.Just keep dreaming and let us make it a reality</small>
 
+               <div class="foot-social">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-instagram"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- End of About Dapskic -->
+
+            <!-- Contact Details , Services -->
+            <div class="foot-detail">
+               <div class="foot-contacts">
+                  <div class="foot-contact">
+                     <i class="fas fa-phone"></i>
+                     <div class="contact-detail">
+                        <p>Phone</p>
+                        <a href="+234000000"> +234 000 000</a>
+                     </div>
+                  </div>
+                  <div class="foot-contact">
+                     <i class="fas fa-envelope"></i>
+                     <div class="contact-detail">
+                        <p>Email</p>
+                        <a href="mailto:dapskic@gmail.com">dapskic@gmail.com</a>
+                     </div>
+                  </div>
+                  <div class="foot-contact">
+                     <i class="fas fa-map-marker"></i>
+                     <div class="contact-detail">
+                        <p>Address</p>
+                        <p> Warri , Nigeria</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="foot-services">
+                  <div class="foot-service">
+                     <h3>Services</h3>
+                     <ul>
+                        <li>Construction</li>
+                        <li>Dredging</li>
+                        <li>Pilling</li>
+                        <li>Maintainance</li>
+                        <li>Consultation</li>
+                     </ul>
+                  </div>
+                  <div class="foot-service">
+                     <h3>Learn More</h3>
+                     <ul>
+                        <li><a href="!#">Our Policy</a></li>
+                        <li><a href="!#">Projects</a></li>
+                        <li><a href="!#">Latest</a></li>
+                        <li><a href="!#">CDP</a></li>
+                        <li><a href="!#">Gallery</a></li>
+                        <li><a href="!#">Staff</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- End of Contact details , services -->      
+         </div>
+         <div class="foot-copyright">
+            <p>&copy; 2020 Dapskic. All Rights Reserved</p>
+            <p> Designed by <a href="mailto:matrix@gmail.com">MatrixWeb</a></p>
+         </div>
+      </div>
    </footer>
    <!-- End Footer section -->
 </body>
