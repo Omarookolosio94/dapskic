@@ -37,7 +37,7 @@
 }
 
 .landing .info {
-   margin-top: 8rem;
+   margin-top: 11rem;
    width : 50%;
 }
 
@@ -187,7 +187,7 @@
 /* Stats Section */
 .stat-box {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    flex-wrap: wrap;
    margin-top: 2rem;
 }
@@ -196,7 +196,6 @@
    width: 20%;
    padding: 2rem 1rem;
    font-weight: bold;
-   border: #ccc solid 1px;
    margin: 0 0 0 0;
 }
 
@@ -214,14 +213,86 @@
 
 /* End of Stats section */
 
+/* Clients section */
+.client-list {
+   display: flex;
+   flex-wrap: wrap;  
+   padding: .5rem 0;
+   margin-bottom: 1rem;
+}
+
+.client {
+   width: 100px;
+   margin: 10px;
+}
+
+.client img {
+   width: 100px;
+   height: 100px;
+}
+
+/* End of CLients section */
+
+
+/* Foot Section */
+
+.foot-social {
+   margin-top: 1rem;
+}
+
+.foot-contacts,.foot-services {
+   display: flex;
+}
+
+.foot-contacts {
+   background: var(--primary-color);
+   color: var(--light-color);
+}
+
+
+.foot-contacts p {
+   color : var(--dark-color);
+}
+
+.foot-contacts a:hover {
+   color: var(--light-color);
+}
+
+.foot-contact , .foot-service{
+   width: 35%;
+   padding: .5rem;
+}
+
+.foot-contact:nth-child(2) , .foot-service:nth-child(2){
+   margin: 0 5px;
+   margin-bottom: 1rem;
+}
+
+.foot-contact {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+}
+
+.foot-contact i {
+   width: 25%;
+   font-size: 2rem;
+   margin-top: 10px;
+   text-align: center;
+}
+.foot-contact .contact-detail {
+   width: 75%;
+}
+/* End of foot section */
+
+
  /* Mobile Styles */
- @media (max-width: 700px) {
+ @media (max-width: 720px) {
  
    .hide-sm {
      display: none;
    }
- 
-   /* Text Styles */
+
    .x-large {
      font-size: 3rem;
    }
@@ -234,12 +305,16 @@
      font-size: 1rem;
    }
 
+   .landing{
+      height: 85vh;
+   }
    .landing .info {
       width: 100%;
+      margin-top: 7rem;
    }
 
    .landing .info h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       line-height: 1;
       margin: 1rem 0;
    }
@@ -284,23 +359,57 @@
 
    /* Stats Section */
    .stat{
-      width: 47%;
+      width: 45%;
       padding: 1rem;
       margin: 0 10px 10px 0;
+      border: #ccc solid 1px;
+
    }
    
    .stat span{
       font-size: 1rem;
    }
 
- }
- 
-/* Large devices (desktops, 992px and up)
-@media (min-width: 720px) {
-  
-} */
+   .client-list {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      white-space: nowrap;
+     -webkit-overflow-scrolling: touch;
+   }
+   
+   .client-list::-webkit-scrollbar {
+      display: none;
+   }
 
-/* Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-   @content;
-} */
+   .client {
+      width: 50px;
+      margin: 10px;
+   }
+   
+   .client img {
+      width: 50px;
+      height: 50px;
+   }
+
+   /* Foot Section */
+
+   .foot-contacts{
+      flex-direction: column;
+   }
+
+   .foot-services {
+      flex-wrap: wrap;
+   }
+
+   .foot-contact{
+      width: 100%;
+   }
+   .foot-service {
+      width: 45%;
+   }
+
+   .foot-service.about{
+      width: 100%;
+   }
+/* End of foot section */
+ }
