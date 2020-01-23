@@ -4,7 +4,7 @@
    padding: 1rem 0;
    position: fixed;
    width : 100%;
-   z-index : 2;
+   z-index: 2;
 }
 
 .navbar .container {
@@ -16,10 +16,17 @@
    width : 30%;
 }
 
+.navbar .logo span {
+   display: none;
+}
+
 .navbar-nav {
    display: inline-flex;
 }
 
+.navbar-nav .side-toggle {
+   display : none;
+}
 .nav-item {
    margin-left : 10px;
 }
@@ -51,6 +58,7 @@
    bottom: 0;
    display :flex;
    justify-content: space-between;
+   margin-top: 1rem;
 }
 
 .landing .info-social i {
@@ -116,11 +124,13 @@
 .service-img {
    width: 50%;
    height: 100%;
+   overflow: hidden;
 }
 
 .service-img img {
    width: 100%;
    height: 100%;
+   border-radius: 4%;
 }
 
 .service-link {
@@ -159,6 +169,7 @@
 
 .photo-img img {
    height: 100%;
+   border-radius: 4%;
 }
 
 .photo-detail {
@@ -170,6 +181,7 @@
    height: 100%;
    transition-duration: 500ms;
    opacity: 0;
+   border-radius: 4%;
 }
 
 .detail-box {
@@ -194,6 +206,7 @@
 
 .stat{
    width: 20%;
+   border-radius: 4%;
    padding: 2rem 1rem;
    font-weight: bold;
    margin: 0 0 0 0;
@@ -272,6 +285,7 @@
    display: flex;
    justify-content: space-between;
    margin-bottom: 1rem;
+   border-radius: 4%;
 }
 
 .foot-contact i {
@@ -305,9 +319,68 @@
      font-size: 1rem;
    }
 
-   .landing{
-      height: 85vh;
+      /* navbar */
+   .navbar .container {
+      display : block;
    }
+
+   .navbar .logo {
+      position: relative;
+      width : 100%;
+   }
+
+   .navbar .logo p {
+      font-size: 1.5rem;
+   }
+
+   .navbar .logo span {
+      position: absolute;
+      display: block;
+      top: 5px;
+      right: 0;
+   }
+
+   .navbar-nav {
+      flex-direction: column;
+      height: 100%;
+      width: 100vw;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      left: -100vw;
+      background: var(--light-color);
+      z-index: 3;
+      transition : all .5s;
+   }
+
+   .navbar-nav.show{
+      left: 0;
+   }
+
+   .navbar-nav .side-toggle {
+      display: block;
+      position: relative;
+      top: 0;
+   }
+
+   .navbar-nav .side-toggle i {
+      float : right;
+   }
+
+   .nav-item {
+      font-size: 1.5rem;
+   }
+
+   .nav-item a:hover {
+      color: var(--primary-color);
+   }
+
+   /* End of Nav */
+
+   .landing{
+      height: 90vh;
+   }
+
    .landing .info {
       width: 100%;
       margin-top: 7rem;
@@ -318,9 +391,22 @@
       line-height: 1;
       margin: 1rem 0;
    }
+
+   .landing .info-link {
+      bottom: 0;
+      flex-direction: column;
+   }
+
+   .landing .info-link p {
+      margin-bottom: 5px;
+   }
    
    .pitch-box {
       flex-direction: column;
+   }
+
+   .pitch {
+      margin: 10px 0;
    }
 
    .service {
@@ -328,7 +414,7 @@
       justify-content: space-between;
       height: auto;
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     
     .service:nth-child(odd) {
@@ -361,8 +447,8 @@
    .stat{
       width: 45%;
       padding: 1rem;
-      margin: 0 10px 10px 0;
-      border: #ccc solid 1px;
+      margin: 0 10px 20px 0;
+      box-shadow : 0px 2px 4px 0px rgba(0, 6, 4, 0.2);
 
    }
    
@@ -397,13 +483,24 @@
       flex-direction: column;
    }
 
+   .foot-contact, .foot-contact:nth-child(2){
+      margin: 0;
+
+   }
+
+   .foot-contact i {
+      font-size: 1.5rem;
+   }
+
    .foot-services {
       flex-wrap: wrap;
    }
 
    .foot-contact{
       width: 100%;
+      padding: 1rem 0;
    }
+   
    .foot-service {
       width: 45%;
    }
