@@ -6,27 +6,30 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Dapskic Construction || Home</title>
    <script src="https://kit.fontawesome.com/82d3ebcbee.js" crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./css/home.css">
    <link rel="stylesheet" href="./css/index.css">
 
 </head>
 <body>
    <!-- Navigation -->
-   <nav class="navbar bg-light">
+   <nav class="navbar bg-light shadow">
       <div class="container">
          <div class="logo">
              <p class="text-bold text-primary"><i class="fas fa-hard-hat fa-lg text-dark"></i>APSKIC </p>
+             <span class="navbar-toggle text-dark"><i class="fas fa-bars fa-2x"></i></span>
          </div>
          
-         <ul class="navbar-nav">
+         <ul class="navbar-nav" id="nav-side">
+            <span class="side-toggle text-dark"><i class="fas fa-times fa-2x"></i></span>
             <li class="nav-item">
-               <a href="" class="nav-link text-dark"><i class="fas fa-map-marker hide-sm"></i> Projects</a>
+               <a href="" class="nav-link text-dark" id="link1"><i class="fas fa-map-marker"></i> Projects</a>
             </li>
             <li class="nav-item">
-               <a href="#services" class="nav-link text-dark"> <i class="fas fa-tractor hide-sm"></i> Services </a>
+               <a href="#services" class="nav-link text-dark" id="link2"> <i class="fas fa-tractor"></i> Services </a>
             </li>
             <li class="nav-item">
-               <a href="#foot" class="nav-link text-dark"> <i class="fas fa-phone hide-sm"></i> Contact</a>
+               <a href="#foot" class="nav-link text-dark" id="link3"> <i class="fas fa-phone"></i> Contact</a>
             </li>
          </ul>
       </div>
@@ -42,7 +45,7 @@
                <h1 class="text-upper text-primary">Dapskic Construction</h1>
                <p>Get all your construction, dredging and engineering project; from Start to Finish completed by world class engineers here at <span class="text-primary">Dapskic</span></p>
 
-               <button class="btn btn-primary my-1">
+               <button class="btn btn-primary my-2">
                   Start Your Project
                </button>
             </div>
@@ -160,9 +163,9 @@
                </div>
             </div>
 
-            <div class="service-link bg-light">
+            <div class="service-link bg-light shadow">
                <p>Need any of our service , Get started Today </p> 
-               <button class="btn btn-primary">Book Your Project</button>
+               <button class="btn btn-primary shadow">Book Your Project</button>
             </div>
          </div>
          <!-- End of service section -->
@@ -296,7 +299,7 @@
    <!-- End of statistics -->
 
    <!-- Clients -->
-   <div class="clients">
+   <div class="clients my-3">
       <div class="container">
          <h1 class="mb-1">Our Clients</h1>
          <p class="mb-1">Over the years we have worked with various organisations which we as a company are proud to call our clients</p>
@@ -334,15 +337,13 @@
                <img src="./img/client1.png" alt="client logo">
             </li>
 
-            
-
          </ul>
       </div>
    </div>
    <!-- End of Clients -->
 
    <!-- Footer section -->
-   <footer id="foot" class="bg-light py-1">
+   <footer id="foot" class="bg-light py-2">
       <div class="container">
          <div class="foot-box">
             <!-- Contact Details , Services -->
@@ -351,7 +352,7 @@
                <div class="foot-services">
                   <div class="foot-service about">
                      <p class="text-primary text-bold"><i class="fas fa-hard-hat text-dark"></i>APSKIC</p>
-                     <small>Quality , Durability and Class ; that is how we build for you.Just keep dreaming and let us make it a reality</small>
+                     <p>Quality , Durability and Class ; that is how we build for you.Just keep dreaming and let us make it a reality</p>
 
                      <div class="foot-social">
                         <a href="#!" target="_blank" rel="noopener noreferrer">
@@ -372,7 +373,7 @@
                      </div>
                   </div>
                   <div class="foot-service">
-                     <h3>Services</h3>
+                     <h4 class="text-bold">Services</h4>
                      <ul>
                         <li>Construction</li>
                         <li>Dredging</li>
@@ -382,7 +383,7 @@
                      </ul>
                   </div>
                   <div class="foot-service">
-                     <h3>Learn More</h3>
+                     <h4 class="text-bold">Learn More</h4>
                      <ul>
                         <li><a href="#!">Our Policy</a></li>
                         <li><a href="#!">Projects</a></li>
